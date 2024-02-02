@@ -33,6 +33,30 @@ a {
 
 */
 
+
+/* 
+
+-- Component Classes --
+
+*/
+
+.btn {
+    display: block;
+    border-radius: 10rem;
+    color: var(--white);
+    background-color: var(--dark);
+    width: 18rem;
+    height: 5rem;
+    /* line-height: 5rem;
+    text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Roboto Medium";
+}
+
 /* 
 
 -- App Style --
@@ -44,7 +68,7 @@ a {
     background: linear-gradient(rgba(59,55,53,0.5),rgba(59,55,53,0.5)), url(../images/header-bg.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 55rem;
+    min-height: 85vh;
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
@@ -228,22 +252,22 @@ header links
 
 */
 
-.header__links {
+.nav__links {
     display: none;
 }
-.header__link {
+.nav__link {
     height: 5.5rem;
     color: var(--white);
     font-family: "Roboto medium";
     margin-left: 1.5rem;
 }
-.header__link--border {
+.nav__link--border {
     border: 1px solid var(--white);
     padding: 1rem 2.5rem;
     border-radius: 10rem;
     transition: all 100ms ease-in;
 }
-.header__link--border:hover {
+.nav__link--border:hover {
     background-color:var(--white);
     color: var(--dark);
 }
@@ -303,4 +327,37 @@ hamburger nav btn
 }
 .nav__btn--open .nav__btn-line::after {
     transform: translateY(-8px) rotate(-45deg);
+}
+
+/* 
+
+
+==========================
+
+header content
+
+==========================
+
+
+*/
+
+.header-content {
+    text-align: center;
+    color: var(--white);
+    margin-top: 6rem;
+}
+.header-content__title {
+    font-family: "Archivo Black";
+    font-size: 5rem;
+    line-height: 1.2rem;
+    max-width: 35rem;
+    margin: 0 auto 3rem auto;
+}
+.header-content_caption {
+    font-size: 1.8rem;
+    max-width: 34rem;
+    margin: 0 auto 2rem auto;
+}
+.header-content__link {
+    background-color: var(--orange);
 }

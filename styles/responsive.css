@@ -1,3 +1,8 @@
+@media (max-width: 380px) {
+    .header-content__title {
+        font-size: 4rem;
+    }
+}
 @media (min-width: 576px) {
     
 }
@@ -10,8 +15,11 @@
     .menu {
         display: flex;
     }
-    .header__links {
+    .nav__links {
         display: block;
+    }
+    .header-content_caption {
+        max-width: 50rem;
     }
 }
 @media (min-width: 1200px) {
