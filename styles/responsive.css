@@ -1,4 +1,9 @@
-@media (max-width: 380px) {
+@media (max-width: 304px) {
+    .header-content {
+        margin-top: 3rem;
+    }
+}
+@media (max-width: 390px) {
     .header-content__title {
         font-size: 4rem;
     }
