@@ -14,3 +14,18 @@ navBtn.addEventListener("click", function() {
     }
 })
 
+const likeBtn = document.querySelectorAll(".place__like-icon")
+
+likeBtn.forEach(function(item) {
+    let like = false;
+    item.addEventListener("click", function() {
+        if (like) {
+            item.classList.remove("place__like-icon--fill")
+            like = false
+        }
+        else {
+            item.classList.add("place__like-icon--fill")
+            like = true
+        }
+    })
+})
