@@ -20,11 +20,11 @@ likeBtn.forEach(function(item) {
     let like = false;
     item.addEventListener("click", function() {
         if (like) {
-            item.classList.remove("place__like-icon--fill")
+            this.classList.remove("place__like-icon--fill")
             like = false
         }
         else {
-            item.classList.add("place__like-icon--fill")
+            this.classList.add("place__like-icon--fill")
             like = true
         }
     })
